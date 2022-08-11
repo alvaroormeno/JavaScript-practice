@@ -8,3 +8,18 @@ let people = [
   {name: 'Gianmarco', age:56, job:'Doctor'},
 
 ]
+
+// MAP METHOD
+// -> calls function on each item in the array and returns new array of the results
+//
+// Challenge: return a nee array with the name, age and birthdate of each of the people from people array
+
+const newArray = people.map(person => ({
+  name: person.name,
+  age: person.age,
+  birth_year: 2022 - person.age
+}))
+
+
+
+console.log(newArray)
